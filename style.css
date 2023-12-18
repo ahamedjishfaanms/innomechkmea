@@ -1,0 +1,36 @@
+/* Add your custom styles here */
+
+/* Example styles for logo and nav links */
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 10px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 767px) {
+    .navbar-nav {
+        margin-top: 10px;
+    }
+
+    .navbar-toggler {
+        margin: 10px 0;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar-nav {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0;
+        display: block;
+    }
+}
