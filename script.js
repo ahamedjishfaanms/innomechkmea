@@ -1,8 +1,15 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const mobileMenuButton = document.getElementById('mobile-menu');
-  const navList = document.querySelector('.nav-list');
+function toggleMenu() {
+    var navList = document.querySelector('.nav-list');
+    var overlay = document.querySelector('.overlay');
 
-  mobileMenuButton.addEventListener('click', function () {
     navList.classList.toggle('show');
-  });
-});
+    overlay.style.display = (overlay.style.display === 'block') ? 'none' : 'block';
+}
+
+function closeMenu() {
+    var navList = document.querySelector('.nav-list');
+    var overlay = document.querySelector('.overlay');
+
+    navList.classList.remove('show');
+    overlay.style.display = 'none';
+}
