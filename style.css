@@ -51,14 +51,24 @@ body {
     align-items: center;
 }
 
+.lottie-animation,
+.image-content {
+    flex: 1;
+}
+
 .lottie-animation {
-    width: 300px; /* Adjust the width as needed */
-    height: 300px; /* Adjust the height as needed */
+    width: 100%; /* Adjust the width as needed */
+    height: 100%; /* Adjust the height as needed */
+}
+
+.image-content {
+    margin-left: 20px; /* Adjust the margin as needed */
 }
 
 .text-content {
     max-width: 600px;
     margin-left: 20px; /* Adjust the margin as needed */
+    text-align: left;
 }
 
 h2 {
@@ -76,8 +86,13 @@ p {
         flex-direction: column;
     }
 
-    .lottie-animation {
+    .lottie-animation,
+    .image-content {
         margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .text-content {
+        margin-left: 0;
     }
 }
-
