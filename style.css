@@ -1,98 +1,78 @@
-/* Add your custom styles here */
-
-/* Example styles for logo and nav links */
-.navbar-brand img {
-    margin-right: 10px;
-}
-
-.navbar-nav .nav-item {
-    margin-right: 10px;
-}
-
-/* Media query for smaller screens */
-@media (max-width: 767px) {
-    .navbar-nav {
-        margin-top: 10px;
-    }
-
-    .navbar-toggler {
-        margin: 10px 0;
-    }
-
-    .navbar-collapse {
-        text-align: center;
-    }
-
-    .navbar-nav {
-        display: block;
-        margin: 0;
-        padding: 0;
-    }
-
-    .navbar-nav .nav-item {
-        margin: 0;
-        display: block;
-    }
-}
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
 }
 
-.about-section {
-    background-color: #add8e6; /* Light blue background */
-    padding: 50px;
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
     text-align: center;
-}
+    position: absolute;
+    background-color: #333;
+    top: 60px;
+    left: 0;
+    z-index: 1;
+  }
 
-.about-content {
+  .nav-list.show {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
+  }
 
-.lottie-animation,
-.image-content {
-    flex: 1;
-}
+  .nav-list li {
+    margin: 10px 0;
+  }
 
-.lottie-animation {
-    width: 100%; /* Adjust the width as needed */
-    height: 100%; /* Adjust the height as needed */
-}
-
-.image-content {
-    margin-left: 20px; /* Adjust the margin as needed */
-}
-
-.text-content {
-    max-width: 600px;
-    margin-left: 20px; /* Adjust the margin as needed */
-    text-align: left;
-}
-
-h2 {
-    color: #333;
-}
-
-p {
-    color: #555;
-}
-
-/* Add responsive styles here */
-
-@media (max-width: 768px) {
-    .about-content {
-        flex-direction: column;
-    }
-
-    .lottie-animation,
-    .image-content {
-        margin-bottom: 20px;
-        width: 100%;
-    }
-
-    .text-content {
-        margin-left: 0;
-    }
+  .menu-toggle {
+    display: flex;
+  }
 }
