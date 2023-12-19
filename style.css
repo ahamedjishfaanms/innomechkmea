@@ -34,3 +34,50 @@
         display: block;
     }
 }
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.about-section {
+    background-color: #add8e6; /* Light blue background */
+    padding: 50px;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lottie-animation {
+    width: 300px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+}
+
+.text-content {
+    max-width: 600px;
+    margin-left: 20px; /* Adjust the margin as needed */
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+/* Add responsive styles here */
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .lottie-animation {
+        margin-bottom: 20px;
+    }
+}
+
